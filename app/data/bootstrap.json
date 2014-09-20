@@ -1,0 +1,20 @@
+{
+  "title": "Fauve ou Sarko ?",
+  "description": "Retrouvez à qui appartiennent ces citations.",
+  "background": "http://www.one-oclock.com/wp-content/uploads/nicolas-sarkozy-trocadero-meme.jpg",
+  "choices": ["Fauve!", "Sarko!"],
+  "questions": [
+    {
+      "label": "Je me suis perdu, j'ai bu la tasse.",
+      "answer": 0
+    },
+    {
+      "label": "Ce sera plus des mensonges, quelque chose de grand, qui sauve la vie qui trompe la mort qui déglingue enfin le blizzard",
+      "answer": 0
+    },
+    {
+      "label": "Il faut quon sonne l’alarme, quon se retrouve, quon se rejoigne.",
+      "answer": 0
+    }
+  ]
+}
