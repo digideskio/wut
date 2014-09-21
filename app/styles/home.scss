@@ -67,8 +67,9 @@
 
     &__choices {
       margin-top: 20px;
-      &__single {
+      &__single, &__single:focus, &__single:active {
         margin-bottom:10px;
+        outline: 0;
       }
     }
   }
