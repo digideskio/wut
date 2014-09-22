@@ -390,14 +390,17 @@ module.exports = function (grunt) {
       ]
     },
 
+
     buildcontrol: {
-      options: {
-        dir: '<%= yeoman.dist %>',
-        remote: 'git@github.com:Pirhoo/wut.git',
-        branch: 'gh-pages',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      dist: {
+        options: {
+          dir: '<%= yeoman.dist %>',
+          remote: 'git@github.com:Pirhoo/wut.git',
+          branch: 'gh-pages',
+          commit: true,
+          push: true,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        }
       }
     },
 
