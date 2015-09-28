@@ -25,6 +25,6 @@ angular.module('wut').controller 'HomeCtrl', ($scope, $timeout, bootstrap)->
       else if $scope.state is 'WRONG'
         'btn-danger'
   # Style of the background element
-  $scope.backgroundStyle = => backgroundImage: 'url('+bootstrap.background+')'
+  $scope.backgroundStyle = -> backgroundImage: 'url('+bootstrap.background+')'
   # Set the current question
   do setCurrent
