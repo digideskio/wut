@@ -1,0 +1,74 @@
+.home {
+
+  &:after {
+    content: "";
+    border: 7px solid @brand-primary;
+    border-left:0;
+    border-right:0;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    pointer-events:none;
+  }
+
+  &--right:after {
+    border-color: @brand-success;
+  }
+
+  &--wrong:after {
+    border-color: @brand-danger;
+  }
+
+  &__background {
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:center center no-repeat;
+    background-size: cover;
+    &:after {
+      opacity:0.8;
+      content:"";
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background:@body-bg;
+    }
+  }
+
+  &__question {
+
+    position: relative;
+    z-index: 100;
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    padding:20px;
+    text-align: center;
+
+    @media (max-width:580px) {
+      margin-top:30px;
+      width: auto;
+    }
+
+    &__label {
+      margin-top:50px;
+      font-size: 20px;
+      font-weight: 200;
+      font-family: @headings-font-family;
+    }
+
+    &__choices {
+      margin-top: 20px;
+      &__single, &__single:focus, &__single:active {
+        margin-bottom:10px;
+        outline: 0;
+      }
+    }
+  }
+}
