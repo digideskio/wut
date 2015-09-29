@@ -96,3 +96,11 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', ['html', 'fonts', 'other']);
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src(
+      path.join(conf.paths.dist, '/**/*')
+    ).pipe($.ghPages({
+      remoteUrl: "git@github.com:pirhoo/wut.git"
+    }));
+});
