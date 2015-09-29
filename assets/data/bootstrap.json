@@ -1,7 +1,7 @@
 {
   "title": "Fauve ou Sarko ?",
   "description": "Retrouvez à qui appartiennent ces citations.",
-  "background": "http://www.one-oclock.com/wp-content/uploads/nicolas-sarkozy-trocadero-meme.jpg",
+  "background": "//www.lepoint.fr/images/2012/05/06/569118-jpg_390614_1000x667.jpg",
   "choices": ["Fauve!", "Sarko!"],
   "questions": [
     {
